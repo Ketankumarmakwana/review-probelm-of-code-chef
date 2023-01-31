@@ -1,0 +1,40 @@
+1) chef and chefina stay in hotel
+
+if X%10!=0 or Y%1!=0:
+        if X%10!=0 and Y%10!=0:
+            N=(X//10)+1
+            M=(Y//10)+1
+            Z=N-M
+            print(abs(Z))
+        elif X%10!=0:
+            N=(X//10)+1
+            M=Y//10
+            Z=N-M
+            print(abs(Z))
+        elif Y%10!=0:
+            M=(Y//10)+1
+            N=X//10
+            Z=N-M
+            print(abs(Z))
+    else:
+        N=X//10
+        M=Y//10
+        Z=N-M
+        print(abs(Z))
+
+
+2) Chef is playing a video game, and is getting close to the end. He decides to finish the rest of the game in a single session.
+
+t = int(input())
+for i in range(t):
+    X, Y, Z = map(int, input().split())
+    if X<=3:
+        print(X*Y)
+    else:
+        if X%3==0:
+             print((X*Y)+((X//3)-1)*Z)
+        else:
+            print((X*Y)+((X//3))*Z)
+
+
+    
