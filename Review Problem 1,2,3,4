@@ -47,4 +47,18 @@ for i in range(t):
         i=i+1
     print(sum1)
     
+ 4)There are two problems in a contest.Problem A is worth 500500 points at the start of the contest.Problem B is worth 10001000 points at the start of the contest.
+ Once the contest starts, after each minute:Maximum points of Problem A reduce by 2 points .Maximum points of Problem B reduce by 4 points.
+ answer: 
+ 
+ t = int(input())
+for i in range(t):
+    X, Y = map(int, input().split())
+    A2B=(500-2*X)+(1000-4*(X+Y))
+    B2A=(1000-4*Y)+(500-2*(X+Y))
+    if A2B<=B2A:
+        print(B2A)
+    else:
+        print(A2B)
+    
     
