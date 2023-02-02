@@ -35,6 +35,16 @@ for i in range(t):
              print((X*Y)+((X//3)-1)*Z)
         else:
             print((X*Y)+((X//3))*Z)
+3)Chef has made a list for his monthly expenses. The list has  N expenses with index 1 to N. The money spent on each expense depends upon the monthly income of Chef.
 
-
+t = int(input())
+for i in range(t):
+    N, X = map(int, input().split())
+    sum1=2**X
+    i=1
+    while i<=N:
+        sum1=sum1//2
+        i=i+1
+    print(sum1)
+    
     
